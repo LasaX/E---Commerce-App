@@ -1,13 +1,13 @@
 import { useState, useEffect } from "react";
-import AdminMenu from "./AdminMenu";
+import AdminMenu from "./AdminMenu.jsx";
 import { useNavigate, useParams } from "react-router-dom";
 import {
   useUpdateProductMutation,
   useDeleteProductMutation,
   useGetProductByIdQuery,
   useUploadProductImageMutation,
-} from "../../redux/api/productApiSlice";
-import { useFetchCategoriesQuery } from "../../redux/api/categoryApiSlice";
+} from "../../redux/api/productApiSlice.js";
+import { useFetchCategoriesQuery } from "../../redux/api/categoryApiSlice.js";
 import { toast } from "react-toastify";
 
 const AdminProductUpdate = () => {

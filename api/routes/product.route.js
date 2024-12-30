@@ -14,9 +14,9 @@ import {
   fetchTopProducts,
   fetchNewProducts,
   filterProducts,
-} from "../controllers/productController.js";
-import { authenticate, authorizeAdmin } from "../middlewares/authMiddleware.js";
-import checkId from "../middlewares/checkId.js";
+} from "../controller/product.controller.js";
+import { authenticate, authorizeAdmin } from "../middleware/authMiddleware.js";
+import checkId from "../middleware/checkId.js";
 
 router
   .route("/")

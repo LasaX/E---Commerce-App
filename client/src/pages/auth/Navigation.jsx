@@ -9,11 +9,11 @@ import {
 import { FaHeart } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
-import "../auth/Navigatoin.css";
+import "./Navigation.css";
 import { useSelector, useDispatch } from "react-redux";
-import { useLogoutMutation } from "../../redux/api/usersApiSlice";
-import { logout } from "../../redux/Features/auth/AuthSlice";
-import FavoritesCount from "../Products/FavoritesCount";
+import { useLogoutMutation } from "../../redux/api/usersApiSlice.js";
+import { logout } from "../../redux/Features/auth/AuthSlice.js";
+import FavoritesCount from "../Products/FavoritesCount.jsx";
 
 const Navigation = () => {
   const { userInfo } = useSelector((state) => state.auth);

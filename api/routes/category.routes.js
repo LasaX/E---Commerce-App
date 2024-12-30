@@ -6,9 +6,9 @@ import {
   removeCategory,
   listCategory,
   readCategory,
-} from "../controllers/category.controller.js";
+} from "../controller/category.controller.js";
 
-import { authenticate, authorizeAdmin } from "../middlewares/authMiddleware.js";
+import { authenticate, authorizeAdmin } from "../middleware/authMiddleware.js";
 
 router.route("/").post(authenticate, authorizeAdmin, createCategory);
 router.route("/:categoryId").put(authenticate, authorizeAdmin, updateCategory);

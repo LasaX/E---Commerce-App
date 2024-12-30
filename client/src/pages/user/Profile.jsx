@@ -2,8 +2,8 @@ import { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { toast } from "react-toastify";
 
-import Loader from "../../components/Loader";
-import { useProfileMutation } from "../../redux/api/usersApiSlice";
+import Loader from "../../components/Loader.jsx";
+import { useProfileMutation } from "../../redux/api/usersApiSlice.js";
 import { setCredentials } from "../../redux/Features/auth/AuthSlice.js";
 import { Link } from "react-router-dom";
 
